@@ -70,9 +70,7 @@ window.addEventListener('load', () => {
 
     if (form) {
         form.addEventListener('submit', (event) => {
-            event.preventDefault();
             window.dispatchEvent(new Event('isSavingPost'));
-            form.submit()
         });
     }
 });
